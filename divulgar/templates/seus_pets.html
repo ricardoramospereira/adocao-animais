@@ -16,7 +16,18 @@
         <div class="col-md-2 bg-side sidebar">
             <h2>ADO.TE</h2>
             <hr>
-            <a href="{% url 'listar_pets' %}" class="btn-custom-primary">Procurar pet</a>
+            <a href="{% url 'listar_pets' %}" class="btn btn-secondary">Procurar pet</a>
+            <hr>
+            <a href="{% url 'dashboard' %}" class="btn btn-secondary">gráfico</a>
+            <hr>
+            <a href="{% url 'ver_pedido_adocao' %}" class="btn btn-secondary">Pedidos</a>
+            <hr>
+            <hr>
+            <a href="{% url 'novo_pet' %}" class="btn btn-secondary">Cadastrar Pet</a>
+            <hr>
+            <a href="{% url 'sair' %}" class="btn btn-secondary">sair</a>
+            
+
         </div>
         <div class="col-md">
             <div class="wrapper">
@@ -47,7 +58,6 @@
                                 <td>
                                     {{pet.nome}}
                                 </td>
-                                AULA 2 | PSW - O RETORNO 7
                                 <td>
                                     {{pet.raca}}
                                 </td>
