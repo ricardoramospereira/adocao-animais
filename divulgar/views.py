@@ -5,6 +5,9 @@ from .models import Tag, Raca, Pet
 from django.contrib import messages
 from django.contrib.messages import constants
 from django.shortcuts import redirect
+from adotar.models import PedidoAdocao
+from django.views.decorators.csrf import csrf_exempt
+from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 @login_required
@@ -65,3 +68,32 @@ def remover_pet(request, id):
     messages.add_message(request, constants.SUCCESS, 'Pet removido com sucesso.')
     return redirect('/divulgar/seus_pets')
     
+def ver_pet(request, id):
+    if request.method == "GET":
+        pet = Pet.objects.get(id=id)
+        return render(request, 'ver_pet.html', {'pet':pet})
+    
+def ver_pedido_adocao(request):
+    if request.method == "GET":
+        pedidos = PedidoAdocao.objects.filter(usuario=request.user).filter(status="AG")
+        return render(request, 'ver_pedido_adocao.html', {'pedidos': pedidos})
+    
+def dashboard(request):
+    if request.method == "GET":
+        return render(request, 'dashboard.html')
+
+@csrf_exempt
+def api_adocoes_por_raca(request):
+    racas = Raca.objects.all()
+
+    qtd_adocoes = []
+    for raca in racas:
+        # adocoes = PedidoAdocao.objects.filter(pet__raca=raca).filter(status="AP").count() - mostrar gráficos de pedidos aceitos
+        adocoes = PedidoAdocao.objects.filter(pet__raca=raca).count() # gráfico de solicitação
+        qtd_adocoes.append(adocoes)
+
+    racas = [raca.raca for raca in racas]
+    data = {'qtd_adocoes': qtd_adocoes,
+            'labels': racas}
+    
+    return JsonResponse(data)
