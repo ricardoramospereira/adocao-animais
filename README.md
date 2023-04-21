@@ -1,5 +1,5 @@
 # adocao-animais
-[![Bower](https://img.shields.io/bower/l/django)]([https://github.com/ricardoramospereira/vagas_emprego/blob/main/LICENSE](https://github.com/ricardoramospereira/adocao-animais/blob/main/LICENSE))
+[![Bower](https://img.shields.io/bower/l/django)](https://github.com/ricardoramospereira/adocao-animais/blob/main/LICENSE)
 
 # About the project
 System aimed at animal donation, where each user can manage their pets published for donations, and as soon as another user requests a donation, the pet owner can refuse or accept. After being accepted or rejected, an email is sent to the applicant about the status.
