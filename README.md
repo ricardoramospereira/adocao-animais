@@ -14,5 +14,24 @@ Graph for knowing which breeds were most donated on the platform, among others, 
 * Bootstrap 5
 
 # Layout
+![Cadastro - Avast Secure Browser 13_03_2023 15_02_15](https://user-images.githubusercontent.com/103947016/233653588-6da8b1d1-7345-4736-a207-88f45cfc0283.png)
+![Cadastro - Avast Secure Browser 13_03_2023 15_04_27](https://user-images.githubusercontent.com/103947016/233653600-aca93999-5fb1-4788-b84d-6f25cc34b2bb.png)
+![Cadastro - Avast Secure Browser 13_03_2023 15_01_27](https://user-images.githubusercontent.com/103947016/233653611-798b5b28-7224-4cd3-a949-aac151a0b81a.png)
+![Cadastro - Avast Secure Browser 13_03_2023 15_01_53](https://user-images.githubusercontent.com/103947016/233653630-f299c488-8e89-4271-bd67-2c2d34249b59.png)
+![Cadastro - Avast Secure Browser 13_03_2023 15_02_05](https://user-images.githubusercontent.com/103947016/233653645-c140406c-8595-49d5-8b99-3532321e48e0.png)
 
+# How to run the project
+Requirements = python==3.9.12 | django==4.1.7
 
+```bash
+# clone repository
+clone repository git clone https://github.com/ricardoramospereira/vagas_emprego.git
+
+# install dependencies
+pip install
+```
+
+# author
+Ricardo Ramos Pereira
+
+https://github.com/ricardoramospereira
