@@ -23,7 +23,6 @@ Graph for knowing which breeds were most donated on the platform, among others, 
 # How to run the project
 Requirements = python==3.9.12 | django==4.1.7
 
-https://github.com/ricardoramospereira/adocao-animais.git
 ```bash
 # clone repository
 git clone https://github.com/ricardoramospereira/adocao-animais.git
