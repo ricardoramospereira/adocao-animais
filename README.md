@@ -1,6 +1,11 @@
 # adocao-animais
 [![Bower](https://img.shields.io/bower/l/django)](https://github.com/ricardoramospereira/adocao-animais/blob/main/LICENSE)
 
+# User authentication
+## requirements
+* user registration
+* Login
+
 # About the project
 System aimed at animal donation, where each user can manage their pets published for donations, and as soon as another user requests a donation, the pet owner can refuse or accept. After being accepted or rejected, an email is sent to the applicant about the status.
 Graph for knowing which breeds were most donated on the platform, among others, such as whether the animal is vaccinated or not.
@@ -12,6 +17,7 @@ Graph for knowing which breeds were most donated on the platform, among others, 
 
 # Front-end
 * Bootstrap 5
+* Javascript
 
 # Layout
 ![Cadastro - Avast Secure Browser 13_03_2023 15_02_15](https://user-images.githubusercontent.com/103947016/233653588-6da8b1d1-7345-4736-a207-88f45cfc0283.png)
