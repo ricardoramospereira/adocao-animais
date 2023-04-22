@@ -34,7 +34,7 @@ Requirements = python==3.9.12 | django==4.1.7
 git clone https://github.com/ricardoramospereira/adocao-animais.git
 
 # install dependencies
-pip install
+pillow
 ```
 
 # author
